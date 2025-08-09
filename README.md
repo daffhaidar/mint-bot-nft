@@ -16,6 +16,13 @@ A robust NFT mint bot for Node.js using ethers.js.
   - ABI & argumen custom, DRY_RUN
 - Prasyarat: Node 16+
 
+### Penjelasan singkat
+- Bot ini mengirim transaksi mint NFT secepat dan seaman mungkin.
+- Jika jaringan padat, bot otomatis menaikkan fee dan mengganti transaksi dengan nonce yang sama (tanpa double mint).
+- Bisa kirim via mempool publik atau relay privat (Flashbots) agar anti front‑run.
+- Cek dulu dengan callStatic supaya tidak kirim transaksi yang bakal gagal (hemat gas).
+- Support multi RPC untuk kestabilan dan latency yang lebih rendah.
+
 ### Setup
 Clone repo, install deps, dan siapkan `.env`:
 ```powershell
@@ -67,6 +74,13 @@ npm start           # kirim transaksi
   - Scheduled start by block/time
   - Custom ABI/args, DRY_RUN mode
 - Requirement: Node 16+
+
+### Quick explanation
+- This bot submits NFT mint transactions as fast and safely as possible.
+- Under congestion, it replaces the same nonce with higher fees (no double mint).
+- Can broadcast via public mempool or private relay (Flashbots) to avoid front‑running.
+- Uses callStatic to ensure the mint won’t revert before sending (saves gas).
+- Multi-RPC fallback improves stability and reduces latency.
 
 ### Setup
 Clone the repo, install dependencies, and prepare `.env`:
