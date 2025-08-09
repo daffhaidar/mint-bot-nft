@@ -1,0 +1,17 @@
+{
+  "name": "mint-bot",
+  "version": "1.1.0",
+  "description": "Robust NFT mint bot using ethers.js with nonce replacement, fallback RPC, parallel multi-wallet, Flashbots option.",
+  "main": "mint-bot.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node mint-bot.js",
+    "start:dry": "cross-env DRY_RUN=true node mint-bot.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.2",
+    "cross-env": "^7.0.3",
+    "@flashbots/ethers-provider-bundle": "^1.0.0"
+  }
+}
