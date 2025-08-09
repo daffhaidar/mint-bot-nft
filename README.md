@@ -17,10 +17,22 @@ A robust NFT mint bot for Node.js using ethers.js.
 - Prasyarat: Node 16+
 
 ### Setup
+Clone repo, install deps, dan siapkan `.env`:
 ```powershell
+# Windows PowerShell
+git clone https://github.com/daffhaidar/mint-bot-nft.git
+cd mint-bot-nft
 npm install
 copy env.example .env
 # edit .env → isi RPC/CHAIN, CONTRACT_ADDRESS, PRIVATE_KEY, dll
+```
+```bash
+# Bash (Linux/macOS)
+git clone https://github.com/daffhaidar/mint-bot-nft.git
+cd mint-bot-nft
+npm install
+cp env.example .env
+# edit .env → fill RPC/CHAIN, CONTRACT_ADDRESS, PRIVATE_KEY, etc.
 ```
 
 ### Jalankan
@@ -57,12 +69,21 @@ npm start           # kirim transaksi
 - Requirement: Node 16+
 
 ### Setup
-```bash
-npm install
+Clone the repo, install dependencies, and prepare `.env`:
+```powershell
 # Windows PowerShell
-type env.example > .env  # or: copy env.example .env
-# Bash
-# cp env.example .env
+git clone https://github.com/daffhaidar/mint-bot-nft.git
+cd mint-bot-nft
+npm install
+copy env.example .env
+# Edit .env → fill RPC/CHAIN, CONTRACT_ADDRESS, PRIVATE_KEY, etc.
+```
+```bash
+# Bash (Linux/macOS)
+git clone https://github.com/daffhaidar/mint-bot-nft.git
+cd mint-bot-nft
+npm install
+cp env.example .env
 # Edit .env → fill RPC/CHAIN, CONTRACT_ADDRESS, PRIVATE_KEY, etc.
 ```
 
