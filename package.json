@@ -1,17 +1,37 @@
 {
-  "name": "mint-bot",
-  "version": "1.1.0",
-  "description": "Robust NFT mint bot using ethers.js with nonce replacement, fallback RPC, parallel multi-wallet, Flashbots option.",
+  "name": "mint-bot-enhanced",
+  "version": "2.0.0",
+  "description": "Enhanced NFT mint bot with advanced gas management, mempool monitoring, multi-RPC failover, and aggressive optimization strategies.",
   "main": "mint-bot.js",
   "license": "MIT",
   "scripts": {
-    "start": "node mint-bot.js",
-    "start:dry": "cross-env DRY_RUN=true node mint-bot.js"
+    "start": "node mint-bot-optimized.js",
+    "dry": "cross-env DRY_RUN=true node mint-bot-optimized.js",
+    "competitive": "cross-env DYNAMIC_FEE_MULTIPLIER=2.0 AGGRESSIVE_GAS_BUMP=50 CONCURRENCY=12 node mint-bot-optimized.js",
+    "verbose": "cross-env VERBOSE_LOGGING=true node mint-bot-optimized.js",
+    "benchmark": "node utils/benchmark.js",
+    "monitor": "node utils/gas-monitor.js",
+    "check": "node utils/contract-checker.js",
+    "setup": "cp env.optimized.example .env && echo 'Setup complete! Edit .env with your settings.'"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
     "ethers": "^5.7.2",
     "cross-env": "^7.0.3",
     "@flashbots/ethers-provider-bundle": "^1.0.0"
+  },
+  "keywords": [
+    "nft",
+    "mint",
+    "bot",
+    "ethereum",
+    "web3",
+    "blockchain",
+    "flashbots",
+    "mev",
+    "gas-optimization"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
