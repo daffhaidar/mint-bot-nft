@@ -1,6 +1,6 @@
 # 🚀 Enhanced Mint Bot v2.0
 
-Bot mint NFT paling "galak" dengan optimasi enterprise-grade untuk dominasi di mint kompetitif.
+Bot mint NFT dengan optimasi enterprise-grade untuk dominasi di mint kompetitif.
 
 ## 🔥 Fitur Unggulan
 
@@ -118,5 +118,3 @@ VERBOSE_LOGGING=true
 - **MEV Protection**: Gunakan `SUBMIT_MODE=flashbots` untuk high-value mints
 
 ---
-
-**Ready to dominate? Bot ini udah "galak" banget! 🔥**
